@@ -1,7 +1,7 @@
 [
     {
         "profile": {
-            "photo": "img/aymane.jpg",
+            "photo": "images/aymane.jpg",
             "firstName": "Lamhamdi",
             "lastName": "Mohamed Aymane",
             "birthday": {
@@ -176,201 +176,640 @@
     },
 
     {
-        "profile": {
+      "profile": {
+        "photo": "images/khalid.jpg",
         "firstName": "Khalid",
         "lastName": "EL Bouari",
-        "professionalSummary": "Développeur passionné, doté d’une solide expérience en développement Java, Angular et méthodes agiles. À la recherche d'opportunités pour valoriser ses compétences dans des projets innovants."
+        "birthday": {
+          "day": 1,
+          "month": 2,
+          "year": 2001
         },
-        "education": [
+        "phone": "+212 624 44 78 61",
+        "email": "khalid.fati7i.hb@gmail.com",
+        "address": "65 Rue Sebta, Hay Kifah, Salé",
+        "professionalSummary": "Étudiant en MQL",
+        "links": ["", "", ""]
+      },
+      "education": [
         {
-            "diploma": "Master Qualité du Logiciel",
-            "organisation": "FSDM",
-            "year": ""
+          "diploma": "Master MQL",
+          "organisation": "FSDM - Université Sidi Mohammed ben Abdellah - Fès",
+          "year": 2026
         },
         {
-            "diploma": "Licence professionnelle GIGD",
-            "organisation": "EST Kénitra",
-            "year": ""
+          "diploma": "Licence en Génie Informatique et Gouvernance Digitale",
+          "organisation": "EST, Université Ibn Tofail, Kénitra",
+          "year": 2024
         },
         {
-            "diploma": "BTS Développement des Systèmes d’Information",
-            "organisation": "BTS Ibn Sina",
-            "year": ""
+          "diploma": "BTS en Développement des Systèmes d'Information",
+          "organisation": "BTS Ibn Sina, Kénitra",
+          "year": 2023
         }
-        ],
-        "technologySkills": [
-        { "skill": "Java JEE" },
-        { "skill": "Spring Boot" },
-        { "skill": "Hibernate" },
-        { "skill": "Angular" },
-        { "skill": "UML" },
-        { "skill": "HTML5" },
-        { "skill": "CSS3" },
-        { "skill": "XML" },
-        { "skill": "JPA" },
-        { "skill": "SQL" },
-        { "skill": "Méthodologies Agile/Scrum" }
-        ],
-        "experiences": [
+      ],
+      "technologySkills": [
         {
-            "type": "Stage",
-            "organisation": "MASCIR",
-            "title": "Stagiaire PFE",
-            "year": 2024,
-            "duration": "Février 2024 - Juin 2024",
-            "description": "Développement d’un système d’information de gestion d’échantillons biologiques"
+          "skill": "Jakarta Entreprise Edition (JEE)",
+          "details": [
+            "Architecture 3 tiers",
+            "Modèle MVC2",
+            "Servlets et JSP",
+            "modèle DAO",
+            "Framework Spring / Spring Boot",
+            "JPA",
+            "Hibernate",
+            "Administration Tomcat"
+          ]
         },
         {
-            "type": "Stage",
-            "organisation": "ONCF",
-            "title": "Stagiaire",
-            "year": 2023,
-            "duration": "Juillet 2023",
-            "description": "Développement d’une application de gestion d’incidents matériels"
+          "skill": "Ingénierie du Web",
+          "details": ["HTML", "CSS", "JavaScript", "Node.js", "Angular"]
         },
         {
-            "type": "Stage",
-            "organisation": "Annajah",
-            "title": "Stagiaire",
-            "year": 2022,
-            "duration": "Juillet 2022",
-            "description": "Gestion de stock (CRUD)"
+          "skill": "Ingénierie DevOps",
+          "details": ["Maven", "Git", "GitHub", "GitLab", "Trello", "JUnit"]
+        },
+        {
+          "skill": "Technologie XML",
+          "details": [
+            "Standard XML",
+            "Parseurs XML (DOM, SAX)",
+            "DTD",
+            "XSD (XML Schema)",
+            "XSLT",
+            "XPath",
+            "XQuery"
+          ]
+        },
+        {
+          "skill": "Bases de données",
+          "details": ["MySQL", "SQL Server", "Oracle DB"]
         }
-        ],
-        "projects": [
+      ],
+      "experiences": [
         {
-            "title": "Application de gestion d’une clinique"
+          "type": "Stage",
+          "organisation": "LaboControl - Fès",
+          "title": "Développement d’une application web pour le marketing intégré des services et produits",
+          "technologies": ["Spring Boot", "Angular", "TypeScript", "HTML/CSS", "MySQL"],
+          "year": 2024,
+          "duration": "3 mois"
         },
         {
-            "title": "Gestion d’absences et notes des étudiants"
+          "type": "Stage",
+          "organisation": "Copref - Kénitra",
+          "title": "Analyse et correction des bugs d’une application de bureau existante développée avec VB.NET",
+          "technologies": ["VB.NET", "SQL Server"],
+          "year": 2023,
+          "duration": "1 mois"
+        },
+        {
+          "type": "Stage",
+          "organisation": "Université Ibn Tofail - Kénitra",
+          "title": "Développement d'une application web pour la gestion numérique du courrier entre le Centre des Études Doctorales (CED) et le Décanat",
+          "technologies": ["PHP", "MySQL", "HTML/CSS", "JavaScript"],
+          "year": 2022,
+          "duration": "1 mois"
+        },
+        {
+          "type": "Projet",
+          "organisation": "FSDM",
+          "title": "UML Diagrams Generator",
+          "technologies": ["Java", "Réflexion (introspection)", "Swing", "XML", "XMI", "EMF", "MOF"],
+          "year": 2025,
+          "duration": "2 mois",
+          "description": "Application d'analyse de code Java permettant d'extraire la structure d'un projet Java et de générer les diagrammes UML associés, y compris l'architecture des packages et des classes."
+        },
+        {
+          "type": "Projet",
+          "organisation": "BTS IBN SINA",
+          "title": "Gestion des Cahiers de Texte",
+          "technologies": ["JEE", "JSP", "MySQL", "pdfMake"],
+          "year": 2023,
+          "duration": "6 mois",
+          "description": "Application web pour la gestion sécurisée des cahiers de texte scolaires."
         }
-        ],
-        "languages": [
-        { "language": "Français", "level": "B2" },
-        { "language": "Anglais", "level": "B1" }
-        ],
-        "softSkills": [
-        "Travail en équipe", "Créativité", "Curiosité", "Adaptabilité"
-        ],
-        "interests": ["Natation", "Football", "Design"]
+      ],
+      "softSkills": [
+        "Esprit d'équipe",
+        "Créativité",
+        "Adaptabilité"
+      ],
+      "languages": [
+        {
+          "language": "Français",
+          "level": "B2",
+          "certification": "DELF",
+          "experience": ""
+        },
+        {
+          "language": "Anglais",
+          "level": "B1",
+          "certification": "TOEIC",
+          "experience": ""
+        }
+      ],
+      "interests": ["Natation", "Football", "Design"]
     },
     {
-        "profile": {
-        "firstName": "Samira",
-        "lastName": "BENNANI",
-        "professionalSummary": "Ingénieure logicielle avec une double compétence en développement mobile et web. Passionnée par l’innovation et les projets à impact."
-        },
-        "education": [
-        {
-            "diploma": "Master en Ingénierie Logicielle",
-            "organisation": "ENSIAS",
-            "year": ""
-        },
-        {
-            "diploma": "Licence en Informatique",
-            "organisation": "FS Rabat",
-            "year": ""
-        }
-        ],
-        "technologySkills": [
-        { "skill": "Java" },
-        { "skill": "React" },
-        { "skill": "Spring Boot" },
-        { "skill": "Docker" },
-        { "skill": "Flutter" },
-        { "skill": "MySQL" },
-        { "skill": "UML" },
-        { "skill": "HTML/CSS" },
-        { "skill": "Git" },
-        { "skill": "Scrum" }
-        ],
-        "experiences": [
-        {
-            "type": "Stage",
-            "organisation": "CGI",
-            "title": "Stagiaire",
-            "year": 2023,
-            "duration": "2023",
-            "description": "Développement d'une application web pour la gestion de projets"
-        },
-        {
-            "type": "Stage",
-            "organisation": "Banque Populaire",
-            "title": "Stagiaire",
-            "year": 2022,
-            "duration": "2022",
-            "description": "Mise en place d’un tableau de bord décisionnel"
-        }
-        ],
-        "projects": [
-        { "title": "Application mobile de gestion de budget" },
-        { "title": "Plateforme e-learning pour les enfants" }
-        ],
-        "languages": [
-        { "language": "Français", "level": "C1" },
-        { "language": "Anglais", "level": "B2" }
-        ],
-        "softSkills": [
-        "Communication", "Esprit critique", "Gestion du temps", "Autonomie"
-        ],
-        "interests": ["Lecture", "Voyages", "Développement durable"]
-    },
-    {
-        "profile": {
+      "profile": {
+        "photo": "images/chaymae.jpg",
         "firstName": "Chaymae",
         "lastName": "EL BOUSSADANY",
-        "professionalSummary": "Étudiante en Master Qualité Logicielle, avec des compétences solides en développement backend, data science et DevOps. Passionnée par la technologie et l’apprentissage continu."
+        "birthday": {
+          "day": 2,
+          "month": 4,
+          "year": 2003
+        },
+        "phone": "0679383336",
+        "email": "elboussadanychaymae@gmail.com",
+        "address": "Al Andalous N°317, Ain Chkef Fèz ",
+        "professionalSummary": "Étudiante en  1ère année Master  Qualité de Logiciel avec des compétences en génie logiciel, méthodes agiles et traitement de données.",
+        "links": [
+          "https://www.linkedin.com/in/chaymae-el-boussadany-3223ba269",
+          "https://github.com/ShyM4e",
+          ""
+        ]
+      },
+      "education": [
+        {
+          "diploma": "Master Big Data Analytics And Smart Systems(non poursuivi)",
+          "organisation": "FSDM - Université Sidi Mohammed ben Abdellah - Fès",
+          "year": 2024
+        },
+        {
+          "diploma": "Licence Fondamentale : Science Mathématiques et Informatique",
+          "organisation": "FSDM - Université Sidi Mohammed ben Abdellah - Fès",
+          "year": 2023
+        },
+        {
+          "diploma": "Baccalauréat Sciences Mathématiques B, option Français",
+          "organisation": "Lycée Technique de Fes",
+          "year": 2020
+        }
+      ],
+      "technologySkills": [
+        {
+          "skill": "Jakarta Entreprise Edition (JEE)",
+          "details": [
+            "Architecture 3 tiers",
+            "Modèle MVC2",
+            "Servlets et JSP",
+            "modèle DAO",
+            "Administration Tomcat"
+          ]
+        },
+        {
+          "skill": "Ingénierie du Web",
+          "details": ["HTML", "CSS", "JavaScript", "Node.js"]
+        },
+        {
+          "skill": "Ingénierie DevOps",
+          "details": [
+            "Maven",
+            "Git",
+            "GitHub",
+            "GitLab",
+            "Jira",
+            "JUnit",
+            "Selenuim",
+            "Docker",
+            "Kubernetes"
+          ]
+        },
+        {
+          "skill": "Technologie XML",
+          "details": [
+            "Standard XML",
+            "Bases de données XML",
+            "Parseurs XML (DOM, SAX)",
+            "DTD",
+            "XSD (XML Schema)",
+            "XSLT",
+            "XPath",
+            "XQuery"
+          ]
+        },
+        {
+          "skill": "Developpement Mobile",
+          "details": ["Flutter"]
+        },
+        {
+          "skill": "Gestion Base de Données",
+          "details": ["MySQL", "MongoDB", "Neo4j", "Firebase"]
+        },
+        {
+          "skill": "Intelligence Artificielle & Traitement des Données",
+          "details": [
+            "Python",
+            "Pandas, NumPy",
+            "Nettoyage et préparation des données",
+            "Matplotlib, Seaborn",
+            "Scikit-Learn",
+            "TensorFlow/Keras"
+          ]
+        },
+        {
+          "skill": "Méthodes Agiles",
+          "details": ["Scrum"]
+        }
+      ],
+      "experiences": [
+        {
+          "type": "Projet",
+          "organisation": "FSDM",
+          "title": "Réalisation d'une application de Gestion de CVs",
+          "technologies": ["HTML", "CSS", "JavaScript"],
+          "year": 2025,
+          "duration": "1 mois"
+        },
+        {
+          "type": "Projet",
+          "organisation": "FSDM",
+          "title": "Générateur de diagrammes de classe",
+          "technologies": ["Java"],
+          "year": 2025,
+          "duration": "1 mois"
+        },
+        {
+          "type": "Projet",
+          "organisation": "FSDM",
+          "title": "Analyse sentimentale des tweets",
+          "technologies": ["Python", "Selenium", "MongoDB", "Power BI"],
+          "year": 2024,
+          "duration": "1 mois"
+        },
+        {
+          "type": "Projet",
+          "organisation": "FSDM",
+          "title": "Cloud Migration Project – Solution Cloud pour e-commerce",
+          "technologies": ["Hyper-V", "NextCloud", "Postfix"],
+          "year": 2024,
+          "duration": "1 mois"
+        },
+        {
+          "type": "Projet",
+          "organisation": "FSDM",
+          "title": "Application Mobile \"In Morocco\"",
+          "technologies": ["Flutter", "SQFLite", "Firebase"],
+          "year": 2023,
+          "duration": "3 mois"
+        }
+      ],
+      "softSkills": [
+        "Communication",
+        "Esprit d'équipe",
+        "Intelligence Emotionnelle",
+        "Ecoute Active",
+        "Créativité",
+        "Capacité de Résolution de problèmes",
+        "Flexibilité et Dynamisme",
+        "Présence"
+      ],
+      "languages": [
+        {
+          "language": "Français",
+          "level": "B2",
+          "certification": "",
+          "experience": ""
+        },
+        {
+          "language": "Anglais",
+          "level": "C1",
+          "certification": "",
+          "experience": ""
+        },
+        {
+          "language": "Allemand",
+          "level": "A1",
+          "certification": "",
+          "experience": ""
+        },
+        {
+          "language": "Espagnol",
+          "level": "A1",
+          "certification": "",
+          "experience": ""
+        }
+      ],
+      "interests": ["Cinéma", "Design graphique", "Musique et Chant", "Lecture"]
+    },
+    {
+        "profile": {
+            "photo": "/photos/p01.png",
+            "firstName": "Zakaria",
+            "lastName": "Bozari",
+            "birthday": {
+                "day": 2001,
+                "month": 2,
+                "year": 20
+            },
+            "phone": "0623474143",
+            "email": "zakaria.bozari@gmail.com",
+            "address": "Casablanca",
+            "professionalSummary": "Ingénieur en informatique avec une bonne expérience \n            sur les architectures logicielles et les nouvelles technologies informatique, \n            en l'occurence Jakarta EE, Spring Boot, React et Angular. \n            Expérimenté dans la gestion de projets agiles, planification, exécution et coordination des tâches \n            avec des équipes multifonctionnelles. Disposant des compétences requises en communication et \n            en résolution de problèmes avec un esprit ouvert en collaboration efficace avec les parties prenantes \n            et les membres de l'équipe.\n        ",
+            "links": [
+                "Github: https://github.com/B-Zakaria-u",
+                "Gitlab: https://gitlab.com/zakaria.bozari",
+                ""
+            ]
         },
         "education": [
-        {
-            "diploma": "Master QL (en cours)",
-            "organisation": "FSDM",
-            "year": ""
-        },
-        {
-            "diploma": "Master BDASS (non terminé)",
-            "organisation": "FSDM",
-            "year": ""
-        },
-        {
-            "diploma": "Licence SMI",
-            "organisation": "FSDM",
-            "year": ""
-        }
+            {
+                "diploma": "Master MQL",
+                "organisation": "FSDM - Université Sidi Mohammed ben Abdellah - Fès",
+                "year": 2024
+            },
+            {
+                "diploma": "License LST",
+                "organisation": "FSTT - Université Abdelmalek Essaâdi - Tanger",
+                "year": 2024
+            },
+            {
+                "diploma": "Baccalauréat",
+                "organisation": "Collège Lycée Lahlou - Casablanca",
+                "year": 2018
+            }
         ],
         "technologySkills": [
-        { "skill": "Java JEE" },
-        { "skill": "Flutter" },
-        { "skill": "Python" },
-        { "skill": "MongoDB" },
-        { "skill": "UML" },
-        { "skill": "Méthodes agiles" },
-        { "skill": "Data science" },
-        { "skill": "DevOps" },
-        { "skill": "Scrum" },
-        { "skill": "FastAPI" },
-        { "skill": "Spring Boot" }
+            {
+                "skill": "Jakarta Entreprise Edition (JEE)",
+                "details": [
+                    "Architecture 3 tiers",
+                    "Modèle MVC2",
+                    "Servlets et JSP",
+                    "modèle DAO",
+                    "Framework Spring / Spring Boot",
+                    "JPA",
+                    "Hibernate",
+                    "Administration Tomcat"
+                ]
+            },
+            {
+                "skill": "Ingénierie du Web",
+                "details": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "Node.js",
+                    "React",
+                    "Angular"
+                ]
+            },
+            {
+                "skill": "Ingénierie DevOps",
+                "details": [
+                    "Maven",
+                    "Git",
+                    "GitHub",
+                    "GitLab",
+                    "Jira",
+                    "Jenkins",
+                    "JUnit",
+                    "Selenuim"
+                ]
+            },
+            {
+                "skill": "Technologie XML",
+                "details": [
+                    "Standard XML",
+                    "Bases de données XML",
+                    "Parseurs XML (DOM, SAX)",
+                    "DTD",
+                    "XSD (XML Schema)",
+                    "XSLT",
+                    "XPath",
+                    "XQuery"
+                ]
+            }
         ],
-        "experiences": [],
-        "projects": [
-        { "title": "Application mobile Flutter (Quran)" },
-        { "title": "Application web de gestion d’absences" },
-        { "title": "Application FastAPI + MongoDB pour les livres" },
-        { "title": "Application Python Data science" },
-        { "title": "Application Spring Boot avec GraphQL" }
-        ],
-        "languages": [
-        { "language": "Français", "level": "B2" },
-        { "language": "Anglais", "level": "C1" },
-        { "language": "Allemand", "level": "A1" },
-        { "language": "Espagnol", "level": "A1" }
+        "experiences": [
+            {
+                "type": "Stage",
+                "organisation": "Skatys - Casablanca",
+                "title": "Développeur ABAP",
+                "technologies": [
+                    "SAP",
+                    "ABAP"
+                ],
+                "year": 2024,
+                "duration": "2 mois"
+            },
+            {
+                "type": "Projet",
+                "organisation": "FSDM",
+                "title": "Réalisation d'une application de Gestion de CVs",
+                "technologies": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "Node.js"
+                ],
+                "year": 2025,
+                "duration": "1 mois"
+            },
+            {
+                "type": "Projet",
+                "organisation": "FSDM",
+                "title": "Réalisation d'une application de génération de diagramme de classeswing java",
+                "technologies": [
+                    "Java",
+                    "Swing",
+                    "Technologie XML"
+                ],
+                "year": 2025,
+                "duration": "1 mois"
+            }
         ],
         "softSkills": [
-        "Écoute", "Créativité", "Esprit critique", "Travail d’équipe",
-        "Capacité à résoudre les problèmes", "Communication", "Autonomie",
-        "Organisation", "Adaptabilité", "Curiosité", "Confiance en soi", "Gestion du stress"
+            "Communication",
+            "Esprit d'équipe",
+            "Capacité de Résolution de problèmes"
         ],
-        "interests": ["Cinéma", "Musique", "Graphisme", "Lecture"]
+        "languages": [
+            {
+                "language": "Français",
+                "level": "C1",
+                "certification": "TCF",
+                "experience": ""
+            },
+            {
+                "language": "Anglais",
+                "level": "C1",
+                "certification": "Rosetta",
+                "experience": ""
+            },
+            {
+                "language": "Arabe",
+                "level": "Maternelle",
+                "certification": "",
+                "experience": ""
+            }
+        ],
+        "interests": [
+            "Design",
+            "Music",
+            "Création numérique et montage"
+        ]
+    },
+    {
+        "profile": {
+            "photo": "images/zakaria.jpg",
+            "firstName": "Zakaria",
+            "lastName": "Bozari",
+            "birthday": {
+                "day": 2001,
+                "month": 2,
+                "year": 20
+            },
+            "phone": "0623474143",
+            "email": "zakaria.bozari@gmail.com",
+            "address": "Casablanca",
+            "professionalSummary": "Ingénieur en informatique avec une bonne expérience \n            sur les architectures logicielles et les nouvelles technologies informatique, \n            en l'occurence Jakarta EE, Spring Boot, React et Angular. \n            Expérimenté dans la gestion de projets agiles, planification, exécution et coordination des tâches \n            avec des équipes multifonctionnelles. Disposant des compétences requises en communication et \n            en résolution de problèmes avec un esprit ouvert en collaboration efficace avec les parties prenantes \n            et les membres de l'équipe.\n        ",
+            "links": [
+                "Github: https://github.com/B-Zakaria-u",
+                "Gitlab: https://gitlab.com/zakaria.bozari",
+                ""
+            ]
+        },
+        "education": [
+            {
+                "diploma": "Master MQL",
+                "organisation": "FSDM - Université Sidi Mohammed ben Abdellah - Fès",
+                "year": 2024
+            },
+            {
+                "diploma": "License LST",
+                "organisation": "FSTT - Université Abdelmalek Essaâdi - Tanger",
+                "year": 2024
+            },
+            {
+                "diploma": "Baccalauréat",
+                "organisation": "Collège Lycée Lahlou - Casablanca",
+                "year": 2018
+            }
+        ],
+        "technologySkills": [
+            {
+                "skill": "Jakarta Entreprise Edition (JEE)",
+                "details": [
+                    "Architecture 3 tiers",
+                    "Modèle MVC2",
+                    "Servlets et JSP",
+                    "modèle DAO",
+                    "Framework Spring / Spring Boot",
+                    "JPA",
+                    "Hibernate",
+                    "Administration Tomcat"
+                ]
+            },
+            {
+                "skill": "Ingénierie du Web",
+                "details": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "Node.js",
+                    "React",
+                    "Angular"
+                ]
+            },
+            {
+                "skill": "Ingénierie DevOps",
+                "details": [
+                    "Maven",
+                    "Git",
+                    "GitHub",
+                    "GitLab",
+                    "Jira",
+                    "Jenkins",
+                    "JUnit",
+                    "Selenuim"
+                ]
+            },
+            {
+                "skill": "Technologie XML",
+                "details": [
+                    "Standard XML",
+                    "Bases de données XML",
+                    "Parseurs XML (DOM, SAX)",
+                    "DTD",
+                    "XSD (XML Schema)",
+                    "XSLT",
+                    "XPath",
+                    "XQuery"
+                ]
+            }
+        ],
+        "experiences": [
+            {
+                "type": "Stage",
+                "organisation": "Skatys - Casablanca",
+                "title": "Développeur ABAP",
+                "technologies": [
+                    "SAP",
+                    "ABAP"
+                ],
+                "year": 2024,
+                "duration": "2 mois"
+            },
+            {
+                "type": "Projet",
+                "organisation": "FSDM",
+                "title": "Réalisation d'une application de Gestion de CVs",
+                "technologies": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "Node.js"
+                ],
+                "year": 2025,
+                "duration": "1 mois"
+            },
+            {
+                "type": "Projet",
+                "organisation": "FSDM",
+                "title": "Réalisation d'une application de génération de diagramme de classeswing java",
+                "technologies": [
+                    "Java",
+                    "Swing",
+                    "Technologie XML"
+                ],
+                "year": 2025,
+                "duration": "1 mois"
+            }
+        ],
+        "softSkills": [
+            "Communication",
+            "Esprit d'équipe",
+            "Capacité de Résolution de problèmes"
+        ],
+        "languages": [
+            {
+                "language": "Français",
+                "level": "C1",
+                "certification": "TCF",
+                "experience": ""
+            },
+            {
+                "language": "Anglais",
+                "level": "C1",
+                "certification": "Rosetta",
+                "experience": ""
+            },
+            {
+                "language": "Arabe",
+                "level": "Maternelle",
+                "certification": "",
+                "experience": ""
+            }
+        ],
+        "interests": [
+            "Design",
+            "Music",
+            "Création numérique et montage"
+        ]
     }
-]
 
+]

@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cv</title>
+    <title>CV Database</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link id="cv-theme" rel="stylesheet" href="css/style3.css">
+
+
 </head>
 <body>
-    
+    <div class="container">
+        <header>
+            <h1>Base de données des CVs</h1>
+            <div class="search-container">
+                <input type="text" id="searchByName" placeholder="Rechercher par nom">
+                <input type="text" id="searchByTechnology" placeholder="Rechercher par technologie">
+                <button onclick="performCombinedSearch()">Rechercher</button>
+                <button onclick="clearSearch()">Effacer</button>
+            </div>
+            <div class="theme-switcher">
+                <label>Sélectionnez le style : </label>
+                <select id="themeSelector">
+                    <option value="style1">Style 1</option>
+                    <option value="style2">Style 2</option>
+                    <option value="style3">Style 3</option>
+                </select>
+            </div>
+        </header>
+
+        <div id="cvContainer" class="cv-grid"></div>
+    </div>
+    <script src="/js/display.js" type="module"></script>
+    <script src="/js/search.js" type="module"></script>
+    <script src="/js/theme.js"></script>
 </body>
 </html>
