@@ -15,7 +15,8 @@ body {
 
 .search-container {
   display: grid;
-  grid-template-columns: 1fr 1fr auto auto;
+  grid-template-columns: 1fr 1fr auto auto auto; /* Ajout d'une colonne supplémentaire */
+  align-items: center;
   gap: 15px;
   margin: 30px 0;
   padding: 20px;
@@ -38,7 +39,7 @@ input[type="text"]:focus {
   box-shadow: 0 0 8px rgba(58, 154, 217, 0.2);
 }
 
-button {
+button ,#themeSelector{
   padding: 12px 25px;
   background: var(--primary-color);
   color: white;

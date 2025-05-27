@@ -174,7 +174,6 @@
             "BasketBall"
         ]
     },
-
     {
       "profile": {
         "photo": "images/khalid.jpg",
@@ -497,7 +496,7 @@
     },
     {
         "profile": {
-            "photo": "/photos/p01.png",
+            "photo": "images/zakaria.jpg",
             "firstName": "Zakaria",
             "lastName": "Bozari",
             "birthday": {
@@ -654,162 +653,154 @@
         ]
     },
     {
-        "profile": {
-            "photo": "images/zakaria.jpg",
-            "firstName": "Zakaria",
-            "lastName": "Bozari",
-            "birthday": {
-                "day": 2001,
-                "month": 2,
-                "year": 20
-            },
-            "phone": "0623474143",
-            "email": "zakaria.bozari@gmail.com",
-            "address": "Casablanca",
-            "professionalSummary": "Ingénieur en informatique avec une bonne expérience \n            sur les architectures logicielles et les nouvelles technologies informatique, \n            en l'occurence Jakarta EE, Spring Boot, React et Angular. \n            Expérimenté dans la gestion de projets agiles, planification, exécution et coordination des tâches \n            avec des équipes multifonctionnelles. Disposant des compétences requises en communication et \n            en résolution de problèmes avec un esprit ouvert en collaboration efficace avec les parties prenantes \n            et les membres de l'équipe.\n        ",
-            "links": [
-                "Github: https://github.com/B-Zakaria-u",
-                "Gitlab: https://gitlab.com/zakaria.bozari",
-                ""
-            ]
-        },
-        "education": [
-            {
-                "diploma": "Master MQL",
-                "organisation": "FSDM - Université Sidi Mohammed ben Abdellah - Fès",
-                "year": 2024
-            },
-            {
-                "diploma": "License LST",
-                "organisation": "FSTT - Université Abdelmalek Essaâdi - Tanger",
-                "year": 2024
-            },
-            {
-                "diploma": "Baccalauréat",
-                "organisation": "Collège Lycée Lahlou - Casablanca",
-                "year": 2018
-            }
-        ],
-        "technologySkills": [
-            {
-                "skill": "Jakarta Entreprise Edition (JEE)",
-                "details": [
-                    "Architecture 3 tiers",
-                    "Modèle MVC2",
-                    "Servlets et JSP",
-                    "modèle DAO",
-                    "Framework Spring / Spring Boot",
-                    "JPA",
-                    "Hibernate",
-                    "Administration Tomcat"
-                ]
-            },
-            {
-                "skill": "Ingénierie du Web",
-                "details": [
-                    "HTML",
-                    "CSS",
-                    "JavaScript",
-                    "Node.js",
-                    "React",
-                    "Angular"
-                ]
-            },
-            {
-                "skill": "Ingénierie DevOps",
-                "details": [
-                    "Maven",
-                    "Git",
-                    "GitHub",
-                    "GitLab",
-                    "Jira",
-                    "Jenkins",
-                    "JUnit",
-                    "Selenuim"
-                ]
-            },
-            {
-                "skill": "Technologie XML",
-                "details": [
-                    "Standard XML",
-                    "Bases de données XML",
-                    "Parseurs XML (DOM, SAX)",
-                    "DTD",
-                    "XSD (XML Schema)",
-                    "XSLT",
-                    "XPath",
-                    "XQuery"
-                ]
-            }
-        ],
-        "experiences": [
-            {
-                "type": "Stage",
-                "organisation": "Skatys - Casablanca",
-                "title": "Développeur ABAP",
-                "technologies": [
-                    "SAP",
-                    "ABAP"
-                ],
-                "year": 2024,
-                "duration": "2 mois"
-            },
-            {
-                "type": "Projet",
-                "organisation": "FSDM",
-                "title": "Réalisation d'une application de Gestion de CVs",
-                "technologies": [
-                    "HTML",
-                    "CSS",
-                    "JavaScript",
-                    "Node.js"
-                ],
-                "year": 2025,
-                "duration": "1 mois"
-            },
-            {
-                "type": "Projet",
-                "organisation": "FSDM",
-                "title": "Réalisation d'une application de génération de diagramme de classeswing java",
-                "technologies": [
-                    "Java",
-                    "Swing",
-                    "Technologie XML"
-                ],
-                "year": 2025,
-                "duration": "1 mois"
-            }
-        ],
-        "softSkills": [
-            "Communication",
-            "Esprit d'équipe",
-            "Capacité de Résolution de problèmes"
-        ],
-        "languages": [
-            {
-                "language": "Français",
-                "level": "C1",
-                "certification": "TCF",
-                "experience": ""
-            },
-            {
-                "language": "Anglais",
-                "level": "C1",
-                "certification": "Rosetta",
-                "experience": ""
-            },
-            {
-                "language": "Arabe",
-                "level": "Maternelle",
-                "certification": "",
-                "experience": ""
-            }
-        ],
-        "interests": [
-            "Design",
-            "Music",
-            "Création numérique et montage"
+    "profile": {
+      "photo": "/images/image.png",
+      "firstName": "Ayoub",
+      "lastName": "Marzouki",
+      "birthday": { "day": 1, "month": 11, "year": 2003 },
+      "jobTitle": "Software Developer",
+      "phone": "0613852665",
+      "email": "ayoubma321@gmail.com",
+      "address": "Fes, Morocco",
+      "professionalSummary": "Persistent and persevering computer science student with a strong foundation in web development and programming.\nRaw willpower being my primary weapon to overcome challenges and achieve goals.\nExperienced in building functional web and desktop applications using modern technologies, such as JEE, Spring / Spring Boot, Java Swing, MySQL, Node JS, Django REST Framework, Javascript (AJAX included), SQL, PL/SQL and MySQL. Seeking to strengthen my technical skills and brighten up my future.",
+      "links": [
+        "https://github.com/Ayoub-Marzouki",
+        "https://www.linkedin.com/in/ayoubmarzouki/",
+        "https://gitlab.com/"
+      ]
+    },
+    "education": [
+      {
+        "diploma": "Software Quality Master's",
+        "organisation": "FSDM - Université Sidi Mohammed ben Abdellah - Fès",
+        "year": 2026
+      },
+      {
+        "diploma": "Licence at Mathematics and Computer Sciences",
+        "organisation": "FSDM - Université Sidi Mohammed ben Abdellah - Fès",
+        "year": 2024
+      },
+      {
+        "diploma": "DEUG at Mathematics and Computer Sciences",
+        "organisation": "FSDM - Université Sidi Mohammed ben Abdellah - Fès",
+        "year": 2024
+      }
+    ],
+    "technologySkills": [
+      {
+        "skill": "Jakarta Entreprise Edition (JEE)",
+        "details": [
+          "3-tiers Architecture",
+          "MVC2 model",
+          "Servlets and JSPs",
+          "DAO Model",
+          "Spring / Spring Boot Framework",
+          "JPA",
+          "Hibernate",
+          "Tomcat Administration"
         ]
-    }
+      },
+      {
+        "skill": "Web Development",
+        "details": ["HTML", "Native CSS", "JavaScript", "AJAX"]
+      },
+      {
+        "skill": "Java Standard Edition (Java SE)",
+        "details": [
+          "Swing",
+          "Generics",
+          "Java XML",
+          "Files I/O",
+          "Lists",
+          "Multithreading",
+          "Exceptions"
+        ]
+      },
+      {
+        "skill": "C Programming",
+        "details": [
+          "Data Structures",
+          "Pointers",
+          "Double Pointers",
+          "Memory management"
+        ]
+      },
+      { "skill": "Databases", "details": ["MySQL", "SQL", "PL/SQL"] },
+      {
+        "skill": "Software Development Practices",
+        "details": ["Test-Driven Development (TDD)", "JUnit"]
+      }
+    ],
+    "experiences": [
+      {
+        "type": "Project",
+        "organisation": "FSDM - Université Sidi Mohammed ben Abdellah - Fès",
+        "title": "CV Generator & Management",
+        "technologies": ["HTML", "CSS", "JavaScript", "Node JS"],
+        "year": 2025,
+        "duration": "1 month"
+      },
+      {
+        "type": "Project",
+        "organisation": "FSDM - Université Sidi Mohammed ben Abdellah - Fès",
+        "title": "Java Project Parser & UML Diagrams Generator",
+        "technologies": ["Java", "Java Swing", "XML", "Java XML"],
+        "year": 2025,
+        "duration": "3 months"
+      },
+      {
+        "type": "Project",
+        "organisation": "FSDM - Université Sidi Mohammed ben Abdellah - Fès",
+        "title": "Online Art Gallery & Marketplace",
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "AJAX",
+          "SQLite3",
+          "Django REST Framework"
+        ],
+        "year": 2024,
+        "duration": "3 months"
+      }
+    ],
+    "softSkills": [
+      "Resilience",
+      "Perseverance",
+      "Attention To Detail",
+      "Clear Written Communication",
+      "Problem Solving",
+      "Analytical Thinking",
+      "Self-Motivation",
+      "Independent Learning"
+    ],
+    "languages": [
+      {
+        "language": "English",
+        "level": "C1",
+        "certification": "",
+        "experience": ""
+      },
+      {
+        "language": "French",
+        "level": "C1",
+        "certification": "",
+        "experience": ""
+      },
+      {
+        "language": "Arabic",
+        "level": "Native",
+        "certification": "",
+        "experience": ""
+      }
+    ],
+    "interests": [
+      "Full Stack Development",
+      "Software Architecture and Clean Code",
+      "Open-Source Tools",
+      "Human Behavior and Emotional Connection"
+    ],
+    "chosenLayout": "creative"
+  }
 
 ]
