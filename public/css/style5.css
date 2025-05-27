@@ -1,0 +1,280 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --background-color: #ecf0f1;
+    --text-color: #2c3e50;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+.container-main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 15px;
+}
+
+
+.container-profile {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: linear-gradient(145deg, #f8f9fa 0%, #ffffff 100%);
+    border-radius: 15px;
+}
+
+.profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid var(--secondary-color);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.profile-contacts,
+.profile-skills,
+.profile-loisirs,
+.profile-langues {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.profile-titles {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.contact-content div {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.contact-content i {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+}
+
+.skills-content,
+.loisirs-content,
+.langues-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.skill,
+.loisirs,
+.langue {
+    background: var(--background-color);
+    padding: 0.8rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    transition: transform 0.2s;
+}
+
+.skill:hover,
+.loisirs:hover,
+.langue:hover {
+    transform: translateY(-3px);
+}
+
+.container-parcours {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.description-profile {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.profile-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: -1px;
+    margin-bottom: 0.5rem;
+}
+
+.profile-title {
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 2rem 0;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 4px;
+    background: var(--secondary-color);
+}
+
+.academiques-content > div {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border-left: 4px solid var(--secondary-color);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.academique-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.academique-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    color: var(--text-color);
+}
+
+.stage-item,.projets-content {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.stage-item:hover {
+    transform: translateX(10px);
+}
+
+.item-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.item-attached,.projet-titles {
+    display: block;
+    margin: 0.5rem 0;
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.competencesTechnologies-category {
+    margin-bottom: 2rem;
+}
+
+.competencesTechnologies-category-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.competencesTechnologies-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.competencesTechnologies {
+    background: var(--background-color);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+}
+
+@media (max-width: 992px) {
+    .container-profile {
+        grid-template-columns: 1fr;
+    }
+    
+    .profile-image {
+        margin-bottom: 2rem;
+    }
+    
+    .skills-content,
+    .loisirs-content,
+    .langues-content {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .container-main {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    .profile-name {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media print {
+    .container-main {
+        box-shadow: none;
+        padding: 0;
+    }
+    
+    .profile-image {
+        text-align: center;
+    }
+    
+    .picture {
+        border-width: 3px;
+    }
+    
+    .skill,
+    .loisirs,
+    .langue {
+        background: none;
+        border: 1px solid #ddd;
+    }
+}

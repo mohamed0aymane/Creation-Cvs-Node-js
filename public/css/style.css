@@ -9,13 +9,14 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 2000px;
   margin: 0 auto;
+  padding: 0 50px;
 }
 
 .search-container {
   display: grid;
-  grid-template-columns: 1fr 1fr auto auto auto; /* Ajout d'une colonne supplémentaire */
+  grid-template-columns: 1fr 1fr auto auto auto; 
   align-items: center;
   gap: 15px;
   margin: 30px 0;
@@ -57,12 +58,12 @@ button:hover {
 
 .cv-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
-  padding: 20px 0;
+  grid-template-columns: repeat(2, minmax(500px, 2fr)); 
+  gap: 40px; 
+  padding: 40px 0;
+  align-items: start; 
 }
 
-/* style1.css - Adapté pour les cartes CV */
 .cv-card {
   background: white;
   border-radius: 15px;
@@ -70,33 +71,47 @@ button:hover {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  min-height: 500px; 
+  margin: 3px; 
+  transition: transform 0.3s ease;
+
+}
+
+.cv-card:hover {
+  transform: translateY(-5px); 
 }
 
 
 
 /* Adaptation responsive */
-@media (max-width: 768px) {
-  .search-container {
-    grid-template-columns: 1fr;
-  }
-  
+@media (max-width: 1200px) {
   .cv-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
   }
-  
- 
 }
 
-@media (max-width: 480px) {
-  .container {
-    padding: 10px;
+@media (max-width: 768px) {
+  .cv-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 30px 15px;
   }
   
   .cv-card {
-    border-radius: 12px;
+    min-height: auto;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cv-grid {
+    gap: 25px;
+    padding: 20px 10px;
   }
   
-  .container-profile {
-    padding: 20px;
+  .container-profile,
+  .container-parcours {
+    padding: 25px 15px;
   }
 }
