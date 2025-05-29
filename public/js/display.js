@@ -150,12 +150,12 @@ export function displayCVs(cvs) {
                         </section>` : ''}
                     </div>
                 </div>
-                <div class="print-button-container">
+            </div >
+            <div class="print-button-container">
                         <button class="print-button" onclick="printCV(this)">
                             <i class="fas fa-print"></i> Imprimer
                         </button>
-                </div>
-            </div >
+            </div>
         `;
                 fragment.appendChild(cvEl);
             });

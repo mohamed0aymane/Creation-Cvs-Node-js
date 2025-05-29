@@ -1,28 +1,34 @@
 /* public/css/print.css */
-body {
-    margin: 0;
-    padding: 20px;
-    background: white;
-    font-size: 12pt;
-}
-
-.cv-card {
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    box-shadow: none !important;
-}
-
-.print-button-container {
-    display: none;
-}
-
 @media print {
-    @page {
-        margin: 0.5cm;
+ body {
+        background: transparent !important;
+        padding: 0 !important;
+    }
+    /* Forcer la disposition en colonnes */
+    .container-main {
+        display: flex !important;
+        flex-direction: row !important;
+         background: transparent !important;
+        
     }
     
-    body {
-        padding: 10px;
+    .container-profile {
+      
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+    
+
+    .container-parcours {
+    flex: 1 !important;
+    padding: 50px  !important;
+    }
+    
+   
+
+    
+    /* Masquer le bouton d'impression */
+    .print-button-container {
+        display: none !important;
     }
 }

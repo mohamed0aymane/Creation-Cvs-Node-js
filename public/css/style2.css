@@ -260,3 +260,7 @@ body {
     max-width: 160px;
   }
 }
+
+.print-button-container {
+ margin: 10px 10px;
+}

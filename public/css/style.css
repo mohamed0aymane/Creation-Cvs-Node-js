@@ -59,7 +59,7 @@ button:hover {
 .cv-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(500px, 2fr)); 
-  gap: 40px; 
+  gap: 10px; 
   padding: 40px 0;
   align-items: start; 
 }
@@ -72,9 +72,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   min-height: 500px; 
-  margin: 3px; 
   transition: transform 0.3s ease;
-
 }
 
 .cv-card:hover {

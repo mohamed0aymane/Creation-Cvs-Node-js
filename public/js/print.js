@@ -9,6 +9,7 @@ window.printCV = function(button) {
         .map(style => style.outerHTML)
         .join('\n');
     
+        
     printWindow.document.write(`
         <!DOCTYPE html>
         <html>
