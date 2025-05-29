@@ -1,11 +1,18 @@
 export function displayCVs(cvs) {
-    const container = document.getElementById('cvContainer');
-    container.innerHTML = '';
+    return new Promise((resolve, reject) => {
+        try {
+            const container = document.getElementById('cvContainer');
+            if (!container) throw new Error('Conteneur CV introuvable');
+            
+            container.innerHTML = '';
 
-    cvs.forEach(cvData => {
-        const cvEl = document.createElement('div');
-        cvEl.className = 'cv-card';
-        cvEl.innerHTML = `
+            // Créer un fragment pour une insertion optimisée
+            const fragment = document.createDocumentFragment();
+            
+            cvs.forEach(cvData => {
+                const cvEl = document.createElement('div');
+                cvEl.className = 'cv-card';
+                cvEl.innerHTML = `
             <div class="container-profile">
                 <section class="profile-image">
                     ${cvData.profile.photo ? 
@@ -144,6 +151,14 @@ export function displayCVs(cvs) {
                 </div>
             </div>
         `;
-        container.appendChild(cvEl);
+                fragment.appendChild(cvEl);
+            });
+
+            container.appendChild(fragment);
+            resolve(); // Résoudre la promesse après l'affichage
+        } catch (error) {
+            console.error('Erreur affichage CVs:', error);
+            reject(error);
+        }
     });
 }

@@ -1,26 +1,30 @@
 import { displayCVs } from './display.js';
-async function fetchCVs(url) {
-    try {
-        const response = await fetch(url);
-        if (!response.ok) throw new Error('Erreur de réseau');
-        return await response.json();
-    } catch (error) {
-        console.error('Erreur:', error);
-        return [];
+
+
+const cvService = {
+    fetchCVs: () => {
+        return new Promise((resolve, reject) => {
+            fetch('/api/cvs')
+                .then(response => {
+                    if (!response.ok) throw new Error('Erreur de réseau');
+                    return response.json();
+                })
+                .then(data => resolve(data))
+                .catch(error => reject(error));
+        });
     }
-}
+};
 
-
-
+// Fonction de recherche principale
 async function performCombinedSearch() {
-    const nameQuery = document.getElementById('searchByName').value.trim().toLowerCase();
-    const techQuery = document.getElementById('searchByTechnology').value.trim().toLowerCase();
-
     try {
-        // Récupérer tous les CVs
-        const allCVs = await fetchCVs('/api/cvs');
+        const nameQuery = document.getElementById('searchByName').value.trim().toLowerCase();
+        const techQuery = document.getElementById('searchByTechnology').value.trim().toLowerCase();
+
+        // Récupération des CVs via la promesse
+        const allCVs = await cvService.fetchCVs();
         
-        // Filtrer les résultats
+        // Filtrage des résultats
         const filteredCVs = allCVs.filter(cv => {
             const fullName = `${cv.profile.firstName} ${cv.profile.lastName}`.toLowerCase();
             const technologies = cv.technologySkills.flatMap(skill => 
@@ -36,17 +40,22 @@ async function performCombinedSearch() {
         displayCVs(filteredCVs);
     } catch (error) {
         console.error('Erreur:', error);
+        // Gestion d'erreur - pourrait afficher un message à l'utilisateur
     }
 }
 
+// Fonction de réinitialisation
 function clearSearch() {
     document.getElementById('searchByName').value = '';
     document.getElementById('searchByTechnology').value = '';
     performCombinedSearch();
 }
 
-// Modification du chargement initial
-window.onload = async () => {
-    const initialCVs = await fetchCVs('/api/cvs');
-    displayCVs(initialCVs);
-};
+// Chargement initial avec gestion de promesse
+cvService.fetchCVs()
+    .then(initialCVs => displayCVs(initialCVs))
+    .catch(error => console.error('Erreur de chargement initial:', error));
+
+// Exposer les fonctions globalement
+window.performCombinedSearch = performCombinedSearch;
+window.clearSearch = clearSearch;

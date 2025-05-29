@@ -14,14 +14,7 @@ export default class Server {
     config(){
         this.app.use(express.static('public'));
         this.app.use(express.json()); 
-        // this.app.use(cors({
-        //     origin:[
-        //         "http://127.0.0.2:5500",
-
-        //     ],
-        //     methods: ['GET', 'POST'],
-        //     allowedHeaders:['Content-Type']
-        // }));
+   
         this.app.use(cors()); // Allow all origins
         this.app.use(requestLogger());
     }

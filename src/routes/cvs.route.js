@@ -1,37 +1,11 @@
 import express from 'express';
-import { getAllCVs,getCVsByTechnology,getCVsByName } from '../services/cvs.service.js';
+import {getAllCVsController,getCVsByTechnologyController,getCVsByNameController} from '../controllers/cvs.controller.js';
 
-const router=express.Router();
-  
+const router = express.Router();
 
-router.get('/', async (req, res) => {
-    try {
-        const cvs = await getAllCVs();
-        res.json(cvs);
-    } catch (error) {
-        res.status(500).json({ message: error.message });
-    }
-});
-
-// GET by technology
-router.get('/technology/:tech', async (req, res) => {
-    try {
-        const cvs = await getCVsByTechnology(req.params.tech);
-        res.json(cvs);
-    } catch (error) {
-        res.status(500).json({ message: error.message });
-    }
-});
-
-
-router.get('/:name', async (req, res) => {
-    try {
-        const decodedName = decodeURIComponent(req.params.name);
-        const cvs = await getCVsByName(decodedName);
-        res.json(cvs);
-    } catch (error) {
-        res.status(500).json({ message: error.message });
-    }
-});
+// Définition des routes avec leurs contrôleurs associés
+router.get('/', getAllCVsController);
+router.get('/technology/:tech', getCVsByTechnologyController);
+router.get('/:name', getCVsByNameController);
 
 export default router;
