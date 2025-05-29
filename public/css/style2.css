@@ -21,7 +21,7 @@ body {
   display: grid;
   grid-template-columns: 360px 1fr;
   max-width: 1200px;
-  margin: 3rem auto;
+
   background: white;
   box-shadow: var(--card-shadow);
   border-radius: 15px;
@@ -160,20 +160,10 @@ body {
   color: var(--primary-color);
   margin-bottom: 0.6rem;
   position: relative;
-  padding-left: 1.5rem;
+  
 }
 
-.academique-title::before, .item-title::before ,.projet-titles::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 10px;
-  height: 10px;
-  background: var(--secondary-color);
-  border-radius: 50%;
-}
+
 
 .item-attached ,.projet-technologies,.item-place{
   color: var(--light-text);
@@ -239,7 +229,7 @@ body {
 @media (max-width: 992px) {
   .container-main {
     grid-template-columns: 1fr;
-    margin: 1.5rem;
+    
   }
   
   .container-profile {

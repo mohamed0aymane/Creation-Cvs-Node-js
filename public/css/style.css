@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  max-width: 2000px;
+  max-width: 4000px;
   margin: 0 auto;
   padding: 0 50px;
 }
@@ -36,14 +36,14 @@ input[type="text"] {
 
 input[type="text"]:focus {
   outline: none;
-  border-color: var(--secondary-color);
+  border-color: lightslategray;
   box-shadow: 0 0 8px rgba(58, 154, 217, 0.2);
 }
 
 button ,#themeSelector{
   padding: 12px 25px;
   background: var(--primary-color);
-  color: white;
+  color: lightslategray;
   border: none;
   border-radius: 8px;
   cursor: pointer;
