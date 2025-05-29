@@ -83,35 +83,3 @@ button:hover {
 
 
 
-/* Adaptation responsive */
-@media (max-width: 1200px) {
-  .cv-grid {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 25px;
-  }
-}
-
-@media (max-width: 768px) {
-  .cv-grid {
-    grid-template-columns: 1fr;
-    gap: 35px;
-    padding: 30px 15px;
-  }
-  
-  .cv-card {
-    min-height: auto;
-    margin: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .cv-grid {
-    gap: 25px;
-    padding: 20px 10px;
-  }
-  
-  .container-profile,
-  .container-parcours {
-    padding: 25px 15px;
-  }
-}

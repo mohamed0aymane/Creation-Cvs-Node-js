@@ -3,7 +3,7 @@ import {getAllCVsController,getCVsByTechnologyController,getCVsByNameController}
 
 const router = express.Router();
 
-// Définition des routes avec leurs contrôleurs associés
+
 router.get('/', getAllCVsController);
 router.get('/technology/:tech', getCVsByTechnologyController);
 router.get('/:name', getCVsByNameController);

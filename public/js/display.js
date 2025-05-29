@@ -6,7 +6,6 @@ export function displayCVs(cvs) {
             
             container.innerHTML = '';
 
-            // Créer un fragment pour une insertion optimisée
             const fragment = document.createDocumentFragment();
             
             cvs.forEach(cvData => {
@@ -155,7 +154,7 @@ export function displayCVs(cvs) {
             });
 
             container.appendChild(fragment);
-            resolve(); // Résoudre la promesse après l'affichage
+            resolve(); 
         } catch (error) {
             console.error('Erreur affichage CVs:', error);
             reject(error);

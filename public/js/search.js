@@ -1,8 +1,8 @@
 import { displayCVs } from './display.js';
 
 
-const cvService = {
-    fetchCVs: () => {
+
+async function fetchCVs () {
         return new Promise((resolve, reject) => {
             fetch('/api/cvs')
                 .then(response => {
@@ -11,9 +11,9 @@ const cvService = {
                 })
                 .then(data => resolve(data))
                 .catch(error => reject(error));
-        });
-    }
-};
+        })
+}
+
 
 // Fonction de recherche principale
 async function performCombinedSearch() {
@@ -22,7 +22,7 @@ async function performCombinedSearch() {
         const techQuery = document.getElementById('searchByTechnology').value.trim().toLowerCase();
 
         // Récupération des CVs via la promesse
-        const allCVs = await cvService.fetchCVs();
+        const allCVs = await fetchCVs();
         
         // Filtrage des résultats
         const filteredCVs = allCVs.filter(cv => {
@@ -40,11 +40,11 @@ async function performCombinedSearch() {
         displayCVs(filteredCVs);
     } catch (error) {
         console.error('Erreur:', error);
-        // Gestion d'erreur - pourrait afficher un message à l'utilisateur
+        
     }
 }
 
-// Fonction de réinitialisation
+
 function clearSearch() {
     document.getElementById('searchByName').value = '';
     document.getElementById('searchByTechnology').value = '';
@@ -52,7 +52,7 @@ function clearSearch() {
 }
 
 // Chargement initial avec gestion de promesse
-cvService.fetchCVs()
+fetchCVs()
     .then(initialCVs => displayCVs(initialCVs))
     .catch(error => console.error('Erreur de chargement initial:', error));
 
