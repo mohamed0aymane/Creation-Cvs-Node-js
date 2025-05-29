@@ -1,7 +1,7 @@
 function getSavedTheme() {
     return new Promise(function(resolve) {
         var savedTheme = localStorage.getItem('selectedTheme');
-        resolve(savedTheme || 'style3'); // Valeur par défaut
+        resolve(savedTheme || 'style5'); // Valeur par défaut
     });
 }
 

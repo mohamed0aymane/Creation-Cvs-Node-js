@@ -1,0 +1,28 @@
+/* public/css/print.css */
+body {
+    margin: 0;
+    padding: 20px;
+    background: white;
+    font-size: 12pt;
+}
+
+.cv-card {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+.print-button-container {
+    display: none;
+}
+
+@media print {
+    @page {
+        margin: 0.5cm;
+    }
+    
+    body {
+        padding: 10px;
+    }
+}

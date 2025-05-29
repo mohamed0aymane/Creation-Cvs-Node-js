@@ -252,3 +252,29 @@ body {
     height: 120px;
   }
 }
+
+/* Dans vos fichiers styleX.css */
+.print-button-container {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.print-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.print-button:hover {
+    background-color: #45a049;
+}
+
+.print-button i {
+    margin-right: 8px;
+}
