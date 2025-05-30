@@ -1,4 +1,12 @@
 import { selectAll} from "../repositories/cvs.repository.js";
+import fs from 'fs';
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const source = path.join(__dirname, "../data/cvs.json");
 
 export async function getAllCVs() {
     return await selectAll(); 
@@ -8,7 +16,6 @@ export async function getAllCVs() {
 
 // Filtre par technologie "Java" :selectbyTechnologie("Java")
 export function  getCVsByTechnology(technology) {
-    data = JSON.parse(fs.readFileSync(source, 'utf8'));
     return new Promise((resolve, reject) => {
         fs.readFile(source, 'utf8', (err, data) => {
             if (err) reject(err);
@@ -27,7 +34,6 @@ export function  getCVsByTechnology(technology) {
 
 // Filtre par nom "Aymane" selectbyName("Lamhamdi Mohamed Aymane")
 export function getCVsByName(name) {
-    data = JSON.parse(fs.readFileSync(source, 'utf8'));
     return new Promise((resolve, reject) => {
         fs.readFile(source, 'utf8', (err, data) => {
             if (err) reject(err);

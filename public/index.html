@@ -6,10 +6,10 @@
     <title>CV Database</title>
     <link rel="stylesheet" href="/css/style.css">
     <link id="cv-theme" rel="stylesheet" href="css/style1.css">
-    <!-- Ajouter dans le <head> -->
+   
+    <link rel="stylesheet" href="/css/preview-styles.css">
     <link rel="stylesheet" href="/css/print.css" media="print">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 
 </head>
 <body>
@@ -32,10 +32,18 @@
             </div>
         </header>
 
-        <div id="cvContainer" class="cv-grid"></div>
+        <div id="cvContainer" class="cv-preview-grid">
+            <div class="loading">
+                <i class="fas fa-spinner"></i>
+                <p>Chargement des CVs...</p>
+            </div>
+        </div>
     </div>
+    
+    <!-- Scripts -->
     <script src="/js/display.js" type="module"></script>
-        <script src="/js/print.js" type="module"></script>
+    <script src="/js/display-preview.js" type="module"></script>
+    <script src="/js/print.js" type="module"></script>
     <script src="/js/search.js" type="module"></script>
     <script src="/js/theme.js"></script>
 </body>

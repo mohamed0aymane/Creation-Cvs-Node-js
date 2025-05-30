@@ -1,4 +1,4 @@
-import { displayCVs } from './display.js';
+import { displayCVsPreview } from './display-preview.js';
 
 
 
@@ -37,7 +37,7 @@ async function performCombinedSearch() {
             return nameMatch && techMatch;
         });
 
-        displayCVs(filteredCVs);
+        displayCVsPreview(filteredCVs);
     } catch (error) {
         console.error('Erreur:', error);
         
@@ -53,7 +53,7 @@ function clearSearch() {
 
 // Chargement initial avec gestion de promesse
 fetchCVs()
-    .then(initialCVs => displayCVs(initialCVs))
+    .then(initialCVs => displayCVsPreview(initialCVs))
     .catch(error => console.error('Erreur de chargement initial:', error));
 
 // Exposer les fonctions globalement
