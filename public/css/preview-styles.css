@@ -8,6 +8,16 @@
     margin: 0 auto;
 }
 
+/* Styles pour l'affichage du CV complet centré */
+.cv-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 /* Card preview individuelle */
 .cv-preview-card {
     background: white;
@@ -147,11 +157,12 @@
     font-size: 0.9em;
 }
 
-/* Bouton retour */
+/* Bouton retour - positionné à gauche */
 .back-button-container {
-    text-align: center;
-    margin: 20px 0;
-    padding: 20px 0;
+    width: 100%;
+    text-align: left;
+    margin: 0 0 20px 0;
+    padding: 0 0 20px 0;
     border-bottom: 1px solid #eee;
 }
 
@@ -179,12 +190,28 @@
     font-size: 0.9em;
 }
 
+/* Style pour le CV complet affiché */
+.cv-grid .cv-card {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
 /* Responsive pour mobile */
 @media (max-width: 768px) {
     .cv-preview-grid {
         grid-template-columns: 1fr;
         padding: 10px;
         gap: 15px;
+    }
+    
+    .cv-grid {
+        padding: 10px;
+        max-width: 100%;
     }
     
     .cv-preview-card {
@@ -202,6 +229,15 @@
     .preview-summary p {
         -webkit-line-clamp: 2;
     }
+    
+    .cv-grid .cv-card {
+        padding: 20px;
+        margin: 0 10px;
+    }
+    
+    .back-button-container {
+        padding: 0 10px 20px 10px;
+    }
 }
 
 /* Animation d'apparition */
@@ -217,11 +253,3 @@
         transform: translateY(0);
     }
 }
-
-/* Délai d'animation pour effet de cascade */
-.cv-preview-card:nth-child(1) { animation-delay: 0.1s; }
-.cv-preview-card:nth-child(2) { animation-delay: 0.2s; }
-.cv-preview-card:nth-child(3) { animation-delay: 0.3s; }
-.cv-preview-card:nth-child(4) { animation-delay: 0.4s; }
-.cv-preview-card:nth-child(5) { animation-delay: 0.5s; }
-.cv-preview-card:nth-child(n+6) { animation-delay: 0.6s; }

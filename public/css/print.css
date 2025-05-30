@@ -1,33 +1,186 @@
-/* public/css/print.css */
+
 @media print {
- body {
-        background: transparent !important;
-        padding: 0 !important;
+    /* Reset général pour l'impression */
+    * {
+        box-shadow: none !important;
+        text-shadow: none !important;
     }
     
+    body {
+        background: transparent !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        font-size: 12pt !important;
+        line-height: 1.3 !important;
+        color: #000 !important;
+    }
+    
+    /* Container principal */
     .container-main {
         display: flex !important;
         flex-direction: row !important;
-         background: transparent !important;
-        
+        background: transparent !important;
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        page-break-inside: avoid;
     }
     
+    /* Section profil */
     .container-profile {
-      
+        flex: 0 0 35% !important;
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
+        padding: 20px !important;
+        
+        border-right: 1px solid #dee2e6 !important;
     }
     
-
+    /* Section parcours */
     .container-parcours {
-    flex: 1 !important;
-    padding: 50px  !important;
+        flex: 1 !important;
+        padding: 20px 30px !important;
+      
     }
     
-   
-
-   
-    .print-button-container {
+    /* Masquer les éléments non nécessaires à l'impression */
+    .print-button-container,
+    .back-button-container,
+    .preview-view-btn,
+    .cv-preview-grid,
+    button,
+    .btn,
+    nav,
+    header,
+    footer,
+    .no-print {
         display: none !important;
+    }
+    
+    /* Optimisation des titres */
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid !important;
+        color: #000 !important;
+    }
+    
+    h1 { font-size: 16pt !important; }
+    h2 { font-size: 14pt !important; }
+    h3 { font-size: 13pt !important; }
+    h4 { font-size: 12pt !important; }
+    
+    /* Optimisation des paragraphes */
+    p {
+        orphans: 3 !important;
+        widows: 3 !important;
+        margin: 0 0 8pt 0 !important;
+    }
+    
+    /* Optimisation des listes */
+    ul, ol {
+        margin: 0 0 8pt 0 !important;
+        padding-left: 20pt !important;
+    }
+    
+    li {
+        margin-bottom: 4pt !important;
+    }
+    
+    /* Images */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+        page-break-inside: avoid !important;
+    }
+    
+    /* Photo de profil */
+    .preview-picture,
+    .profile-photo {
+        border: 1px solid #ccc !important;
+        max-width: 80pt !important;
+        max-height: 80pt !important;
+    }
+    
+    /* Sections principales */
+    .section {
+        page-break-inside: avoid !important;
+        margin-bottom: 15pt !important;
+    }
+    
+    /* Éviter les coupures dans les éléments importants */
+    .experience-item,
+    .education-item,
+    .skill-item,
+    .project-item {
+        page-break-inside: avoid !important;
+        margin-bottom: 10pt !important;
+    }
+    
+    /* Optimisation des tableaux */
+    table {
+        border-collapse: collapse !important;
+        width: 100% !important;
+    }
+    
+    th, td {
+        border: 1px solid #ccc !important;
+        padding: 4pt !important;
+        text-align: left !important;
+    }
+    
+    /* Liens */
+    a {
+        color: #000 !important;
+        text-decoration: none !important;
+    }
+    
+    a[href]:after {
+        content: " (" attr(href) ")" !important;
+        font-size: 10pt !important;
+        color: #666 !important;
+    }
+    
+    /* Masquer les URLs pour les liens email et téléphone */
+    a[href^="mailto:"]:after,
+    a[href^="tel:"]:after {
+        content: "" !important;
+    }
+    
+    /* Forcer l'impression sur une seule page si possible */
+    @page {
+        margin: 1.5cm !important;
+        size: A4 !important;
+    }
+    
+    /* Première page */
+    @page :first {
+        margin-top: 1cm !important;
+    }
+    
+    /* Tags de compétences */
+    .preview-skill-tag,
+    .skill-tag {
+        background: #e9ecef !important;
+        color: #000 !important;
+        border: 1px solid #ccc !important;
+        padding: 2pt 6pt !important;
+        margin: 1pt !important;
+        display: inline-block !important;
+    }
+    
+    /* Responsive pour impression */
+    .cv-grid {
+        display: block !important;
+        width: 100% !important;
+        max-width: none !important;
+    }
+    
+    .cv-card {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+        border: none !important;
     }
 }
