@@ -4,7 +4,7 @@
         background: transparent !important;
         padding: 0 !important;
     }
-    /* Forcer la disposition en colonnes */
+    
     .container-main {
         display: flex !important;
         flex-direction: row !important;
@@ -26,8 +26,7 @@
     
    
 
-    
-    /* Masquer le bouton d'impression */
+   
     .print-button-container {
         display: none !important;
     }
